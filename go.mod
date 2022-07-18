@@ -1,4 +1,4 @@
-module github.com/hanjayasuryalim/my-recursive
+module github.com/hanjayasuryalim/my-recursive/v2
 
 go 1.18
 

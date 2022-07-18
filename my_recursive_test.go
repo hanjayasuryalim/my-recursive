@@ -7,6 +7,6 @@ import (
 
 func TestFactorial(t *testing.T) {
 	expected := 120
-	result := Factorial(5)
+	result := FactorialTailRecursive(5, 1)
 	assert.Equal(t, expected, result, "Expected result to be 120")
 }

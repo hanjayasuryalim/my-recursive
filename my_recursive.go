@@ -1,11 +1,9 @@
 package my_recursive
 
-import "log"
-
-func Factorial(n int) int {
-	log.Printf("Current n :%d", n)
+func FactorialTailRecursive(n int, total int) int {
 	if n == 1 {
-		return 1
+		return total
 	}
-	return n * Factorial(n-1)
+	total *= n
+	return FactorialTailRecursive(n-1, total)
 }
